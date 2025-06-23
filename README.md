@@ -70,7 +70,7 @@ Siga os passos abaixo para clonar e executar este projeto em sua máquina:
 Abra o terminal (cmd, bash ou terminal do VS Code) e digite:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/enzio-alby/clinica-vida-e-saude/tree/main
 Substitua seu-usuario e nome-do-repositorio pelo endereço real do seu GitHub.
 
 📂 2. Acesse a pasta do projeto
@@ -82,7 +82,7 @@ Abra o arquivo html/index.html diretamente no navegador (clique duas vezes ou us
 Navegue pelas páginas a partir da index.html.
 
 Opção 2 – Via VS Code com Live Server (recomendado):
-No VS Code, clique com o botão direito em index.html.
+No VS Code, clique com o botão direito em login.html.
 
 Selecione "Open with Live Server".
 
