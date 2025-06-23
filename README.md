@@ -49,7 +49,6 @@ CLINICA VIDA E SAUDE/
 │ ├── registro.js
 │ ├── sidebar.js
 │ └── tabs.js
----
 ```
 
 ## 🚧 Status do Projeto
