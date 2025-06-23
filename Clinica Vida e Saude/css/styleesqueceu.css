@@ -1,0 +1,164 @@
+body {
+            background: #f5f6fa;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 32px 28px;
+            border-radius: 8px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+        }
+        .container h2 {
+            margin-bottom: 18px;
+            color: #2d3436;
+        }
+        .container form {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .container input[type="email"] {
+            padding: 10px;
+            border: 1px solid #b2bec3;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .container button {
+            background: #0984e3;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .container button:hover {
+            background: #74b9ff;
+        }
+        .success-message {
+            color: #00b894;
+            margin-top: 18px;
+            font-size: 1em;
+        }
+        .back-link {
+            display: block;
+            margin-top: 18px;
+            color: #636e72;
+            text-decoration: none;
+            font-size: 0.95em;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Acessibilidade fixa no canto inferior direito */
+.accessibility {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.accessibility-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icone-acessibilidade {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: transform 0.2s, box-shadow 0.2s;
+  object-fit: cover;
+  padding: 4px;
+}
+
+.icone-acessibilidade:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+/* Ajuste do menu de acessibilidade */
+.vision-menu {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  padding: 14px 18px;
+  margin-top: 8px;
+  align-items: flex-start;
+  min-width: 180px;
+}
+
+.vision-menu button {
+  background: linear-gradient(90deg, #009688 60%, #43cea2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 1em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  margin-bottom: 4px;
+  width: 100%;
+  text-align: left;
+}
+
+.vision-menu button:hover {
+  background: linear-gradient(90deg, #00695c 60%, #009688 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Contraste alto */
+.high-contrast {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.high-contrast a {
+  color: #0f0 !important;
+}
+
+.high-contrast button {
+  background-color: #444 !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+/* Texto maior */
+.larger-text {
+  font-size: 1.25em !important;
+}
+
+/* Alteração do fundo do container no modo de alto contraste */
+.high-contrast .container {
+  background-color: #333 !important;
+  color: #fff !important;
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+
+/* Alterar o texto para branco no modo de alto contraste */
+.high-contrast .container h2 {
+  color: #fff !important;
+}

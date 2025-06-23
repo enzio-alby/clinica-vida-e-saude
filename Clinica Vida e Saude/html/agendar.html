@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendar Consulta</title>
+  <link rel="stylesheet" href="../css/styleagendar.css
+  " />
+  <style>
+    body {
+      background: url('../images/fundoindex.jpg') no-repeat center center / cover;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Hospital Vida e Saúde</h1>
+    </header>
+    <h2>Agendar Consulta</h2>
+    <form>
+      <label for="especialidade">Especialidade*</label>
+      <select class="select" id="especialidade" name="especialidade" required>
+        <option value="">Selecione</option>
+        <option value="cardiologia">Cardiologia</option>
+        <option value="dermatologia">Dermatologia</option>
+        <option value="ginecologia">Ginecologia</option>
+        <option value="neurologia">Neurologia</option>
+        <option value="ortopedia">Ortopedia</option>
+        <option value="pediatria">Pediatria</option>
+        <option value="psiquiatria">Psiquiatria</option>
+        <option value="urologia">Urologia</option>
+      </select>
+      <label for="medico">Médico*</label>
+      <select class="select" id="medico" name="medico" required>
+        <option value="">Selecione um médico</option>
+        <option value="dr-joao-silva">Dr. João Silva</option>
+        <option value="dra-maria-oliveira">Dra. Maria Oliveira</option>
+        <option value="dr-carlos-santos">Dr. Carlos Santos</option>
+      </select>
+      <label for="data">Data*</label>
+      <input class="date-input" type="date" id="data" name="data" required placeholder="dd/mm/aaaa">
+      <label for="hora">Horário*</label>
+      <select class="select" id="hora" name="hora" required>
+        <option value="">Selecione</option>
+        <option value="09:00">09:00</option>
+        <option value="09:30">09:30</option>
+        <option value="10:00">10:00</option>
+        <option value="10:30">10:30</option>
+        <option value="11:00">11:00</option>
+        <option value="11:30">11:30</option>
+        <option value="12:00">12:00</option>
+        <option value="12:30">12:30</option>
+        <option value="13:00">13:00</option>
+        <option value="13:30">13:30</option>
+        <option value="14:00">14:00</option>
+        <option value="14:30">14:30</option>
+        <option value="15:00">15:00</option>
+        <option value="15:30">15:30</option>
+        <option value="16:00">16:00</option>
+        <option value="16:30">16:30</option>
+        <option value="17:00">17:00</option>
+        <option value="17:30">17:30</option>
+        <option value="18:00">18:00</option>
+      </select>
+      <button type="submit" class="btn-primary-salvar">Agendar</button>
+    </form>
+    <div id="mensagem-sucesso" class="mensagem-sucesso">
+      Consulta Agendada com Sucesso!
+    </div>
+    <br><br>
+    <button onclick="location.href='index.html'" class="btn-secondary">Voltar</button>
+  </div>
+  <script>
+  document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Impede o envio do formulário
+
+    // Exibe a mensagem de sucesso
+    const mensagem = document.getElementById('mensagem-sucesso');
+    mensagem.style.display = 'block';
+
+    // Oculta a mensagem após 3 segundos
+    setTimeout(() => {
+      mensagem.style.display = 'none';
+    }, 3000);
+
+    // Limpa os campos do formulário
+    this.reset();
+  });
+</script>
+</body>
+</html>

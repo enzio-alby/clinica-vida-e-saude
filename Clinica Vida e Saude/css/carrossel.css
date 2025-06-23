@@ -1,0 +1,63 @@
+/* Carrossel principal */
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+  
+.faixa-carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.item-carrossel {
+    min-width: 100%;
+    user-select: none;
+}
+  
+.item-carrossel img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+  
+/* Botões de navegação */
+.botao-carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 105, 92, 0.7);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+  
+.botao-carrossel:hover {
+    background: rgba(0, 105, 92, 1);
+}
+  
+.botao-carrossel.anterior {
+    left: 10px;
+}
+  
+.botao-carrossel.proximo {
+    right: 10px;
+}
+  
+/* Responsividade */
+@media (max-width: 600px) {
+    .botao-carrossel {
+      font-size: 1.5rem;
+      width: 32px;
+      height: 32px;
+    }
+}

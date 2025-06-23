@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Esqueceu a Senha - Clínica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styleesqueceu.css" />
+</head>
+<body>
+    <div class="container" id="container">
+        <h2>Esqueceu a Senha</h2>
+        <form id="recoverForm">
+            <input type="email" id="email" placeholder="Digite seu e-mail" required>
+            <button type="submit">Enviar recuperação</button>
+        </form>
+        <a href="login.html" class="back-link">Voltar para o login</a>
+    </div>
+
+    <!-- Acessibilidade dinâmica -->
+    <div class="accessibility">
+      <div class="accessibility-icons">
+        <img src="../images/Olho.png" alt="Acessibilidade visual" class="icone-acessibilidade" onclick="toggleVisionMenu()" />
+        <img src="../images/Orelha.png" alt="Acessibilidade auditiva" class="icone-acessibilidade" onclick="toggleAudioAccessibility()" />
+      </div>
+      <div class="vision-menu" id="visionMenu" style="display:none;">
+        <button onclick="toggleContrast()">Ativar/Desativar Contraste</button>
+        <button onclick="increaseFont()">Aumentar Fonte</button>
+        <button onclick="decreaseFont()">Diminuir Fonte</button>
+      </div>
+    </div>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+    <script src="../javascript/acessibilidade.js"></script>
+    <script>
+        document.getElementById('recoverForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('container').innerHTML = `
+                <h2>Recuperação enviada</h2>
+                <p class="success-message">
+                    Um e-mail de recuperação foi enviado para o endereço informado.<br>
+                    Verifique sua caixa de entrada e siga as instruções.
+                </p>
+                <a href="login.html" class="back-link">Voltar para o login</a>
+            `;
+        });
+    </script>
+</body>
+</html>

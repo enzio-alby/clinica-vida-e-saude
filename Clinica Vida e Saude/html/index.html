@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo - Clínica Vida e Saúde</title>
+  <link rel="stylesheet" href="../css/styleindex.css">
+  <link rel="stylesheet" href="../css/carrossel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="page-background">
+    <!-- Imagem do fundo -->
+    <div class="top-image-container">
+      <img src="../images/topo22.png" alt="Topo Clínica" class="top-image">
+    </div>
+
+    <!-- Cabeçalho 1 -->
+    <header class="header">
+      <div>
+        <label for="estado-select">Você está em</label>
+        <select id="estado-select">
+          <option>Brasília</option>
+          <option>São Paulo</option>
+          <option>Rio de Janeiro</option>
+          <option>Minas Gerais</option>
+          <option>Bahia</option>
+          <option>Paraná</option>
+          <option>Pernambuco</option>
+          <option>Ceará</option>
+          <option>Rio Grande do Sul</option>
+          <option>Goiás</option>
+          <option>Pará</option>
+        </select>
+      </div>
+      <div class="header-buttons">
+        <button class="btn-login" onclick="window.location.href='login.html'">Login</button>
+        <button class="btn-cadastro" onclick="window.location.href='registro.html'">Cadastre-se</button>
+      </div>
+    </header>
+
+    <!-- Barra de navegação com botões -->
+    <nav class="header-nav">
+      <ul>
+        <li class="dropdown has-dropdown">
+          <button type="button">
+            <i class="fas fa-hospital"></i> Sobre o hospital <i class="fas fa-chevron-down chevron"></i>
+          </button>
+          <ul class="dropdown-content">
+            <li><a href="#sobre">Nossa história</a></li>
+          </ul>
+        </li>
+        <li class="dropdown has-dropdown">
+          <button type="button">
+            <i class="fas fa-map-marker-alt"></i> Unidades <i class="fas fa-chevron-down chevron"></i>
+          </button>
+          <ul class="dropdown-content">
+            <li><a href="#unidades">Brasília</a></li>
+            <li><a href="#unidades">São Paulo</a></li>
+            <li><a href="#unidades">Rio de Janeiro</a></li>
+            <li><a href="#unidades">Minas Gerais</a></li>
+            <li><a href="#unidades">Pará</a></li>
+            <li><a href="#unidades">Santa Catarina</a></li>
+          </ul>
+        </li>
+        <li><button type="button"><i class="fas fa-stethoscope"></i> Serviços</button></li>
+        <li class="dropdown has-dropdown">
+          <button type="button">
+            <i class="fas fa-user-md"></i> Especialidades <i class="fas fa-chevron-down chevron"></i>
+          </button>
+          <ul class="dropdown-content">
+            <li><a href="#cardiologia">Cardiologia</a></li>
+            <li><a href="#ortopedia">Ortopedia</a></li>
+            <li><a href="#pediatria">Pediatria</a></li>
+            <li><a href="#ginecologia">Ginecologia</a></li>
+            <li><a href="#dermatologia">Dermatologia</a></li>
+          </ul>
+        </li>
+        <li class="dropdown has-dropdown">
+          <button type="button">
+            <i class="fas fa-vials"></i> Exames <i class="fas fa-chevron-down chevron"></i>
+          </button>
+          <ul class="dropdown-content">
+            <li><a href="#laboratorial">Laboratorial</a></li>
+            <li><a href="#imagem">Imagem</a></li>
+            <li><a href="#diagnostico">Diagnóstico Avançado</a></li>
+          </ul>
+        </li>
+        <li><button type="button"><i class="fas fa-user-nurse"></i> Área do médico</button></li>
+        <li><button type="button"><i class="fas fa-envelope"></i> Fale conosco</button></li>
+      </ul>
+    </nav>
+
+    <!-- Barra de busca -->
+    <div class="agendar-container">
+      <button class="btn-agendar-grande" onclick="window.location.href='agendar.html'">
+        Agendar Exame Online
+      </button>
+    </div>
+
+    <!-- Carrossel de imagens abaixo do cabeçalho -->
+    <section class="carrossel">
+      <div class="faixa-carrossel">
+        <div class="item-carrossel"><img src="../images/1.jpg" alt="Ambiente 1"></div>
+        <div class="item-carrossel"><img src="../images/2.jpg" alt="Ambiente 2"></div>
+        <div class="item-carrossel"><img src="../images/3.jpg" alt="Ambiente 3"></div>
+      </div>
+      <button class="botao-carrossel anterior">‹</button>
+      <button class="botao-carrossel proximo">›</button>
+    </section>
+
+    <!-- Container das abas -->
+    <div class="container">
+      <section class="tabs">
+        <div class="tab-panels">
+          <div id="sobre" class="tab-panel active">
+            <h2>Sobre a Clínica</h2>
+            <p>Centro de saúde de alta performance, com atendimento humanizado e tecnologia de ponta.</p>
+            <div class="historia-container">
+              <h2 class="historia-titulo">
+                <i class="fas fa-seedling"></i> Nossa História
+              </h2>
+              <div class="historia-timeline">
+                <div class="historia-bloco">
+                  <span class="historia-ano">1995</span>
+                  <p>
+                    Fundado por médicos e empresários visionários do DF, o Vida e Saúde nasceu com a missão de oferecer atendimento humanizado aliado à alta tecnologia. Inaugurou uma ala de internação com 50 leitos e pronto-socorro para emergências de baixa e média complexidade.
+                  </p>
+                </div>
+                <div class="historia-bloco">
+                  <span class="historia-ano">2000</span>
+                  <p>
+                    O hospital expandiu seu corpo clínico e inaugurou o Centro Cirúrgico de Alta Performance, pioneiro em vídeo-cirurgia e tecnologia robótica na região Centro-Oeste. Pouco depois, lançou o laboratório de análises clínicas, agilizando diagnósticos e tratamentos.
+                  </p>
+                </div>
+                <div class="historia-bloco">
+                  <span class="historia-ano">2005</span>
+                  <p>
+                    Inspirado pelo modelo do Hospital Brasília, inaugurou a primeira unidade satélite no Lago Norte, levando urgência 24h e ambulatório clínico para mais perto dos bairros, facilitando o acesso à saúde preventiva e acompanhamento de doenças crônicas.
+                  </p>
+                </div>
+                <div class="historia-bloco">
+                  <span class="historia-ano">2012-2015</span>
+                  <p>
+                    Conquistou certificação internacional de segurança do paciente e implantou o prontuário eletrônico integrado, permitindo acompanhamento clínico em tempo real e reduzindo riscos de erro medicamentoso.
+                  </p>
+                </div>
+                <div class="historia-bloco">
+                  <span class="historia-ano">2018</span>
+                  <p>
+                    Inaugurou o Centro de Oncologia Vida e Saúde, com equipamentos de última geração e apoio psicológico/social. Lançou a campanha “Vida que Abraça”, reforçando o compromisso com a saúde da mulher.
+                  </p>
+                </div>
+                <div class="historia-bloco">
+                  <span class="historia-ano">Hoje</span>
+                  <p>
+                    Com cinco unidades, mais de 300 leitos e 200 especialistas, o hospital oferece infraestrutura completa, do pronto-socorro 24h à telemedicina e home care. Sua história reflete inovação, expansão inteligente e foco na experiência do paciente.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="unidades" class="tab-panel">
+            <h2>Nossas Unidades</h2>
+            <p>Atendemos em diversos bairros para facilitar seu acesso.</p>
+          </div>
+          <div id="servicos" class="tab-panel">
+            <h2>Serviços</h2>
+            <p>Consultas, exames, pronto-socorro 24h, centro cirúrgico e muito mais.</p>
+          </div>
+          <div id="especialidades" class="tab-panel">
+            <h2>Especialidades</h2>
+            <p>Cardiologia, Ortopedia, Pediatria, Ginecologia e Outras.</p>
+          </div>
+          <div id="exames" class="tab-panel">
+            <h2>Exames</h2>
+            <p>Laboratorial, de imagem e diagnóstico avançado.</p>
+          </div>
+          <div id="area-medico" class="tab-panel">
+            <h2>Área do Médico</h2>
+            <p>Portal exclusivo para atualização de prontuários e agendamentos.</p>
+          </div>
+          <div id="contato" class="tab-panel">
+            <h2>Fale Conosco</h2>
+            <p>Central de atendimento: (61) 3704-9000 | contato@clinica.com.br</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Menu hambúrguer -->
+    <button id="menu-toggle" class="hamburger" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Sidebar -->
+    <nav id="sidebar" class="sidebar">
+      <ul>
+        <li class="dropdown">
+          <button type="button">
+            <i class="fas fa-hospital"></i> Sobre o hospital <i class="fas fa-chevron-down chevron"></i>
+          </button>
+          <ul class="dropdown-content">
+            <li><a href="#sobre">Nossa história</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button type="button">
+            <i class="fas fa-map-marker-alt"></i> Unidades <i class="fas fa-chevron-down chevron"></i>
+          </button>
+          <ul class="dropdown-content">
+            <li><a href="#unidades">Brasília</a></li>
+            <li><a href="#unidades">São Paulo</a></li>
+            <li><a href="#unidades">Rio de Janeiro</a></li>
+            <li><a href="#unidades">Minas Gerais</a></li>
+            <li><a href="#unidades">Pará</a></li>
+            <li><a href="#unidades">Santa Catarina</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button type="button">
+            <i class="fas fa-user-md"></i> Especialidades <i class="fas fa-chevron-down chevron"></i>
+          </button>
+          <ul class="dropdown-content">
+            <li><a href="#cardiologia">Cardiologia</a></li>
+            <li><a href="#ortopedia">Ortopedia</a></li>
+            <li><a href="#pediatria">Pediatria</a></li>
+            <li><a href="#ginecologia">Ginecologia</a></li>
+            <li><a href="#dermatologia">Dermatologia</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button type="button">
+            <i class="fas fa-vials"></i> Exames <i class="fas fa-chevron-down chevron"></i>
+          </button>
+          <ul class="dropdown-content">
+            <li><a href="#laboratorial">Laboratorial</a></li>
+            <li><a href="#imagem">Imagem</a></li>
+            <li><a href="#diagnostico">Diagnóstico Avançado</a></li>
+          </ul>
+        </li>
+        <li><a href="#area-medico"><i class="fas fa-user-nurse"></i> Área do médico</a></li>
+        <li><a href="#contato"><i class="fas fa-envelope"></i> Fale conosco</a></li>
+        <li><button class="btn-login" onclick="window.location.href='login.html'"><i class="fas fa-sign-in-alt"></i> Login</button></li>
+        <li><button class="btn-cadastro" onclick="window.location.href='registro.html'"><i class="fas fa-user-plus"></i> Cadastro</button></li>
+      </ul>
+    </nav>
+
+    <!-- Área de Emergência -->
+    <section class="emergency">
+      <h2>Emergência</h2>
+      <p>Seja atendido de forma rápida, com especialidades de pronto atendimento.</p>
+      <div class="info">
+        <p><i class="fas fa-map-marker-alt"></i> St. de Habitações Individuais Sul QI 15 - Lago Sul, Brasília - DF</p>
+        <p><i class="fas fa-clock"></i> Horário de atendimento: 24hs</p>
+      </div>
+      <img src="../images/mapa.png" alt="Mapa do hospital">
+      <button class="btn-como-chegar" onclick="window.open('https://www.google.com/maps/place/St.+de+Habita%C3%A7%C3%B5es+Individuais+Sul+QI+15+-+Asa+Sul,+Bras%C3%ADlia+-+DF/@-15.8519686,-47.8869258,16z/data=!3m1!4b1!4m6!3m5!1s0x935a24fe02badadf:0x57f5bb041e1db2c3!8m2!3d-15.8506946!4d-47.8822231!16s%2Fg%2F11bwfzrggs?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D')">Como chegar</button>
+    </section>
+
+    <div id="mensagem-flutuante" class="mensagem-flutuante">
+      Central de atendimento: (61) 3704-9000 | contato@clinica.com.br
+    </div>
+  </div>
+
+  <footer class="footer-infos">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Certificações</h3>
+        <p><a href="#">Saiba mais sobre nossas certificações</a></p>
+      </div>
+      <div class="footer-col">
+        <h3>Para paciente</h3>
+        <ul>
+          <li><a href="#">Pronto-Socorro</a></li>
+          <li><a href="#">Especialidades</a></li>
+          <li><a href="#">Exames</a></li>
+          <li><a href="#">Convênios</a></li>
+          <li><a href="#">Médicos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Sobre o hospital</h3>
+        <ul>
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Unidades</a></li>
+          <li><a href="#">Centros de referência</a></li>
+          <li><a href="#">Comodidades</a></li>
+          <li><a href="#">Pronto-socorro</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Fale Conosco</h3>
+        <ul>
+          <li><a href="#">Fale conosco</a></li>
+          <li><a href="#">Perguntas Frequentes</a></li>
+          <li><a href="#">Orçamento</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Área do médico</h3>
+        <ul>
+          <li><a href="#">Apoio médico</a></li>
+          <li><a href="#">Documentos</a></li>
+          <li><a href="#">Centro de Ensino</a></li>
+        </ul>
+        <p class="footer-rt">
+          Responsável Técnica: Ana Cristina &nbsp; CRM-DF 0404
+        </p>
+        <p class="footer-copy">
+          © Copyright 2025
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../javascript/carrossel.js"></script>
+  <script src="../javascript/tabs.js"></script>
+  <script src="../javascript/sidebar.js"></script>
+  <script src="../javascript/homebar.js"></script>
+</body>
+</html>
