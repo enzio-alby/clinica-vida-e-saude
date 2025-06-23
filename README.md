@@ -18,7 +18,39 @@ Este projeto consiste em um site básico para a **Clínica Vida e Saúde**, dese
   - `css/`: estilos visuais
   - `javascript/`: scripts de comportamento
 
-<pre> ## 📁 Estrutura de Pastas ```text CLINICA-VIDA-E-SAUDE/ ├── .vscode/ ├── css/ │ ├── style.css │ ├── carrossel.css │ ├── styleagendar.css │ ├── styleesqueceu.css │ ├── styleindex.css │ ├── stylelogin.css │ └── styleregistro.css ├── agendar.html ├── esqueceu.html ├── index.html ├── login.html ├── registro.html ├── images/ │ ├── 1.jpg, 2.jpg, 3.jpg │ ├── fundoindex.jpg │ ├── libras.png, mapa.png, marcar.jpg │ ├── Olho.png, Orelha.png, topo22.png ├── javascript/ │ ├── acessibilidade.js │ ├── app.js │ ├── carrossel.js │ ├── homebar.js │ ├── registro.js │ ├── sidebar.js │ └── tabs.js ``` </pre>
+## 📁 Estrutura de Pastas
+```
+CLINICA VIDA E SAUDE/
+├── .vscode/
+├── css/
+│ ├── carrossel.css
+│ ├── style.css
+│ ├── styleagendar.css
+│ ├── styleesqueceu.css
+│ ├── styleindex.css
+│ ├── stylelogin.css
+│ └── styleregistro.css
+├── html/
+│ ├── agendar.html
+│ ├── esqueceu.html
+│ ├── index.html
+│ ├── login.html
+│ └── registro.html
+├── images/
+│ ├── 1.jpg, 2.jpg, 3.jpg
+│ ├── fundoindex.jpg
+│ ├── libras.png, mapa.png, marcar.jpg
+│ ├── Olho.png, Orelha.png, topo22.png
+├── javascript/
+│ ├── acessibilidade.js
+│ ├── app.js
+│ ├── carrossel.js
+│ ├── homebar.js
+│ ├── registro.js
+│ ├── sidebar.js
+│ └── tabs.js
+---
+```
 
 ## 🚧 Status do Projeto
 
