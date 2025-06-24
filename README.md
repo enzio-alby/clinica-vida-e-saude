@@ -72,10 +72,9 @@ Abra o terminal (cmd, bash ou terminal do VS Code) e digite:
 
 ```bash
 git clone https://github.com/enzio-alby/clinica-vida-e-saude/tree/main
-Substitua seu-usuario e nome-do-repositorio pelo endereço real do seu GitHub.
 
 📂 2. Acesse a pasta do projeto
-cd nome-do-repositorio
+cd clinica-vida-e-saude/
 🚀 3. Execute o projeto
 Opção 1 – Via navegador:
 Abra o arquivo html/index.html diretamente no navegador (clique duas vezes ou use "Abrir com").
